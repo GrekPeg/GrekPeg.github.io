@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:"Segoe WP N", sans-serif;
+    color: #6f7173;
+}
+
+.container{
+    width: 979px;
+    margin: 0 auto;
+}
+.logo{
+    margin-top: 25px;
+    float: left;
+}
+nav{
+    float: right;
+    margin-top: 25px;
+}
+.menu li{
+    float: left;
+    margin-left: 22px;
+    list-style: none;
+}
+.menu a{
+    text-decoration: none;
+    font-size: 19.35pt;
+    display: inline-block;
+    line-height: 2.5;
+    cursor: pointer;
+    position:relative;
+    border-bottom: 3px solid #fff;
+}
+.menu a:after {
+    background-color: #5094f2;
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0%;
+    left:50%;
+    position:absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    transform:translateX(-50%);
+}
+.menu a:hover:after,
+.menu a:focus:after {
+    width: 100%;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    width: 100%;
+    clear: both;
+}
+.banner{
+    height: 488px;
+    background: #5b6c7f url(../img/1.jpg) no-repeat center top / cover;
+}
+.prev{
+    float: left;
+    margin: 240px auto auto 92px;
+}
+.next{
+    float: right;
+    margin: 240px 92px auto auto;
+}
+.iphone{
+    float: left;
+    margin: 39px 0 0 20px;
+}
+.text-banner {
+    margin: 155px auto auto 100px;
+    float: left;
+}
+.text-banner h1{
+    font-family: "Segoe WP Light", sans-serif;
+    font-size: 30.35pt;
+    color: white;
+}
+.text-banner p{
+    font-family: "Segoe WP Light", sans-serif;
+    font-size: 20.35pt;
+    color: white;
+}
+.singup {
+    margin: 38px 0 0 40px;
+    float: left;
+}
+.services{
+    margin-top: 55px;
+}
+.services-item{
+    width: 320px;
+    float: left;
+    text-align: center;
+}
+.services-item h3{
+    font-size: 19.35pt;
+    margin: 20px 0 10px 0;
+    color: #5094f2
+}
+.services-item p{
+    font-size: 13.35pt;
+}
+.services-item:last-child{
+    float: right;
+}
+.services-item:nth-child(2){
+    margin-left: 10px;
+}
+.product{
+    margin-top: 75px;
+    height: 425px;
+}
+.product_cart{
+    float: left;
+    margin-left: 40px;
+    font-size: 21px;
+}
+.product_cart img{
+    margin-top: 33px;
+}
+.product-text{
+    float: left;
+    margin: 45px 0 0 70px;
+}
+.product-text h2{
+    line-height: 50px;
+    font-size: 26.35px;
+}
+.product-text p{
+    line-height: 36px;
+    font-size: 15.35px;
+}
+footer{
+    line-height: 95px;
+    font-size: 13.35pt;
+    text-align: center;
+}
+
