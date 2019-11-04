@@ -13,22 +13,18 @@
     align-items: center;
     /*flex-wrap: wrap;*/
 }
+
 .logo{
     margin-top: 10px;
 }
-.container nav{
-    margin-top: 25px;
-}
-.menu{
-    display: flex;
-}
 
-.menu li{
-    margin-left: 40px;
+.menu{
+    margin-top: 25px;
+    display: flex;
     list-style: none;
 }
 
-.menuLink{
+.menu__link{
     text-decoration: none;
     font-size: 18.35pt;
     display: inline-block;
@@ -36,9 +32,10 @@
     cursor: pointer;
     position:relative;
     border-bottom: 3px solid #fff;
+    margin-left: 25px;
 }
 
-.menuLink:after {
+.menu__link:after {
     background-color: #5094f2;
     display: block;
     content: "";
@@ -49,10 +46,11 @@
     transition: width .3s ease-in-out;
     transform:translateX(-50%);
 }
-.menuLink:hover:after,
-.menuLink:focus:after {
+.menu__link:hover:after,
+.menu__link:focus:after {
     width: 100%;
 }
+
 .banner{
     background: #5b6c7f url(../img/1.jpg) no-repeat center top / cover;
     display: flex;
