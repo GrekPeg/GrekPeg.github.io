@@ -6,32 +6,39 @@
 }
 
 .container{
-    width: 979px;
+    width: 980px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*flex-wrap: wrap;*/
 }
 .logo{
-    margin-top: 25px;
-    float: left;
+    margin-top: 10px;
 }
-nav{
-    float: right;
+.container nav{
     margin-top: 25px;
 }
+.menu{
+    display: flex;
+}
+
 .menu li{
-    float: left;
-    margin-left: 22px;
+    margin-left: 40px;
     list-style: none;
 }
-.menu a{
+
+.menuLink{
     text-decoration: none;
-    font-size: 19.35pt;
+    font-size: 18.35pt;
     display: inline-block;
-    line-height: 2.5;
+    line-height: 2;
     cursor: pointer;
     position:relative;
     border-bottom: 3px solid #fff;
 }
-.menu a:after {
+
+.menuLink:after {
     background-color: #5094f2;
     display: block;
     content: "";
@@ -39,102 +46,81 @@ nav{
     width: 0%;
     left:50%;
     position:absolute;
-    -webkit-transition: width .3s ease-in-out;
-    -moz--transition: width .3s ease-in-out;
     transition: width .3s ease-in-out;
-    -webkit-transform:translateX(-50%);
-    -moz-transform:translateX(-50%);
     transform:translateX(-50%);
 }
-.menu a:hover:after,
-.menu a:focus:after {
+.menuLink:hover:after,
+.menuLink:focus:after {
     width: 100%;
-}
-.clearfix:after {
-    content: "";
-    display: table;
-    width: 100%;
-    clear: both;
 }
 .banner{
-    height: 488px;
     background: #5b6c7f url(../img/1.jpg) no-repeat center top / cover;
+    display: flex;
+    align-items: center;
 }
-.prev{
-    float: left;
-    margin: 240px auto auto 92px;
+.banner__prev{
+    margin-left: 92px;
 }
-.next{
-    float: right;
-    margin: 240px 92px auto auto;
+.banner__next{
+    margin-right: 92px;
 }
-.iphone{
-    float: left;
-    margin: 39px 0 0 20px;
+.banner__phone{
+    margin-top: 39px;
 }
-.text-banner {
-    margin: 155px auto auto 100px;
-    float: left;
+.banner__text {
+    margin-right: 110px;
 }
-.text-banner h1{
+.banner__text h1{
     font-family: "Segoe WP Light", sans-serif;
     font-size: 30.35pt;
     color: white;
+    line-height: 1.5;
 }
-.text-banner p{
+.banner__text p{
     font-family: "Segoe WP Light", sans-serif;
     font-size: 20.35pt;
     color: white;
+    line-height: 1.5;
+    padding-bottom: 30px;
 }
-.singup {
-    margin: 38px 0 0 40px;
-    float: left;
+.banner__singup {
+    margin-left: 10px;
 }
 .services{
     margin-top: 55px;
+    display: flex;
+    flex-wrap: wrap;
 }
-.services-item{
+.services__item{
     width: 320px;
-    float: left;
     text-align: center;
 }
-.services-item h3{
-    font-size: 19.35pt;
+.services__item h3{
+    font-size: 14.35pt;
     margin: 20px 0 10px 0;
     color: #5094f2
 }
-.services-item p{
-    font-size: 13.35pt;
+.services__item p{
+    font-size: 10.35pt;
 }
-.services-item:last-child{
-    float: right;
-}
-.services-item:nth-child(2){
-    margin-left: 10px;
-}
-.product{
-    margin-top: 75px;
-    height: 425px;
-}
-.product_cart{
-    float: left;
-    margin-left: 40px;
+.services__cart{
+    margin: 83px auto auto 40px;
     font-size: 21px;
 }
-.product_cart img{
+.services__cart img{
     margin-top: 33px;
 }
-.product-text{
-    float: left;
-    margin: 45px 0 0 70px;
+.services__text{
+    margin: 140px 0 0 70px;
 }
-.product-text h2{
+.services__text h2{
     line-height: 50px;
     font-size: 26.35px;
 }
-.product-text p{
+.services__text p{
     line-height: 36px;
     font-size: 15.35px;
+    margin-bottom: 56px;
 }
 footer{
     line-height: 95px;
