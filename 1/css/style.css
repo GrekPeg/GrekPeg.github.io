@@ -4,7 +4,6 @@
     font-family:"Segoe WP N", sans-serif;
     color: #6f7173;
 }
-
 .container{
     width: 980px;
     margin: 0 auto;
@@ -13,17 +12,19 @@
     align-items: center;
     /*flex-wrap: wrap;*/
 }
-
 .logo{
-    margin-top: 10px;
+    max-width: 175px;
 }
-
+.logo img{
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+}
 .menu{
     margin-top: 25px;
     display: flex;
     list-style: none;
 }
-
 .menu__link{
     text-decoration: none;
     font-size: 18.35pt;
@@ -34,7 +35,6 @@
     border-bottom: 3px solid #fff;
     margin-left: 25px;
 }
-
 .menu__link:after {
     background-color: #5094f2;
     display: block;
@@ -48,9 +48,8 @@
 }
 .menu__link:hover:after,
 .menu__link:focus:after {
-    width: 100%;
+    width: 100%;*/
 }
-
 .banner{
     background: #5b6c7f url(../img/1.jpg) no-repeat center top / cover;
     display: flex;
@@ -64,6 +63,11 @@
 }
 .banner__phone{
     margin-top: 39px;
+    max-width: 358px;
+}
+.banner__phone img {
+    width: 100%;
+    height: auto;
 }
 .banner__text {
     margin-right: 110px;
