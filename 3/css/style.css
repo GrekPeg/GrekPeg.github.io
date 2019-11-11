@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:"Arial", sans-serif;
+    /*font-family:"Montserrat Regular", sans-serif;*/
+    color: #3a4d5c;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+/*.section {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #efefef;
+}*/
+.card {
+ /*   width: 1066px;*/
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #efefef;
+}
+.card__left {
+    width: 465px;
+    height: 608px;
+    background: #37b0ae;
+    position: relative;
+}
+.card-left__photo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.card-left__photo-main{
+    position: absolute;
+    left: -45px;
+  }
+.card-left__photo-shadow{
+    position: absolute;
+    bottom: -260px;
+     left: -90px;
+}
+.card__left p{
+    font-family:"Arial Black", sans-serif;
+    font-size: 25px;
+    color: white;
+    padding: 20px 0 40px 20px;
+}
+.card-center{
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    left: 47.5%;
+    transform: translate(-50%, -50%);
+}
+.card-center__photo-item{
+    max-width: 100px;
+    max-height: 100px;
+    background: rgba(255, 255, 255, .5) ;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+}
+.card-center__photo-item:hover
+{
+    border: 3px solid deeppink;
+}
+.card-center__photo-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.card__right {
+    width: 542px;
+    height: 700px;
+    background: white;
+    position: relative;
+    padding-left: 90px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+ }
+.card-right__title{
+    margin: 70px 0 0 0;
+}
+.card__right h4{
+    margin: 50px 0 10px 0;
+}
+.card-right__squares p{
+    margin-bottom: 12px;
+    text-transform: none;
+}
+.card-right__squares li{
+    list-style: square;
+    color: #37b0ae;
+    margin-left: 12px;
+}
+.card-right__menu{
+    list-style: none;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.card-right__menu a {
+    text-decoration: none;
+    margin-right:25px;
+}
+.card-right__quantity{
+    display: flex;
+    margin-top: 5px;
+    cursor: pointer;
+ }
+.card-right__quantity .value{
+    width: 50px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid grey;
+}
+.card-right__quantity .button{
+    background: white;
+    width: 50px;
+    line-height: 35px;
+    border: 1px solid grey;
+}
+.card-right__quantity .button:hover{
+    background: greenyellow;
+    border: 1px solid black;
+}
+.card-right__price{
+    margin-top: 20px;
+}
+.card-right__price-old{
+    margin-left: 20px;
+    font-size: 14px;
+    text-transform: none;
+    font-weight: normal;
+}
+.card-right__actions .button{
+    background: white;
+    width: 200px;
+    line-height: 35px;
+    border: 1px solid grey;
+    margin-top: 20px;
+    text-transform: none;
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.card-right__actions .button:hover
+{
+    background: #37b0ae;
+    border: 0;
+    cursor: pointer;
+    color: white;
+}
