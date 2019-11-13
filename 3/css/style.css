@@ -14,13 +14,15 @@
     transform: translate(-50%, -50%);
     background: #efefef;
 }*/
+html{
+    background: #efefef;
+}
 .card {
  /*   width: 1066px;*/
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #efefef;
 }
 .card__left {
     width: 465px;
