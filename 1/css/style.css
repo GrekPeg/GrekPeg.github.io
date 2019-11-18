@@ -3,14 +3,18 @@
     margin: 0;
     font-family:"Segoe WP N", sans-serif;
     color: #6f7173;
+    font-weight: normal;
+    box-sizing: border-box;
 }
+hr{
+     color: lightgrey;
+ }
 .container{
-    width: 980px;
+    max-width: 980px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*flex-wrap: wrap;*/
 }
 .logo{
     max-width: 175px;
@@ -35,6 +39,24 @@
     border-bottom: 3px solid #fff;
     margin-left: 25px;
 }
+ .menu-button{
+     display: none;
+     background: #5094f2;
+     width: 45px;
+     text-align: center;
+     line-height: 40px;
+     font-size: 60px ;
+     margin-right: 20px;
+ }
+ .menu-button p{
+    transform: scale(0.6);
+     color: white;
+     margin-right: 10px;
+     padding-bottom: 5px;
+ }
+input[type="checkbox"]{
+     display: none;
+}
 .menu__link:after {
     background-color: #5094f2;
     display: block;
@@ -48,7 +70,7 @@
 }
 .menu__link:hover:after,
 .menu__link:focus:after {
-    width: 100%;*/
+    width: 100%;
 }
 .banner{
     background: #5b6c7f url(../img/1.jpg) no-repeat center top / cover;
@@ -62,15 +84,14 @@
     margin-right: 92px;
 }
 .banner__phone{
-    margin-top: 39px;
-    max-width: 358px;
+    margin-top: 30px;
+    max-width: 36%;/*358px;*/
 }
 .banner__phone img {
     width: 100%;
-    height: auto;
 }
 .banner__text {
-    margin-right: 110px;
+    padding-left: 50px;
 }
 .banner__text h1{
     font-family: "Segoe WP Light", sans-serif;
@@ -92,34 +113,57 @@
     margin-top: 55px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .services__item{
-    width: 320px;
-    text-align: center;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service-item__img{
+    max-width: 70%;
+}
+.service-item__img img{
+    width: 100%;
+    height: auto;
+}
+.services hr{
+    display: none;
+}
+.service-item__text{
+     text-align: center;
 }
 .services__item h3{
     font-size: 14.35pt;
-    margin: 20px 0 10px 0;
+    margin: 0 0 10px 0;
     color: #5094f2
 }
 .services__item p{
     font-size: 10.35pt;
+    margin: 0 30px;
 }
 .services__cart{
+    display: flex;
+}
+.services-cart__img{
+    max-width: 100%;
     margin: 83px auto auto 40px;
     font-size: 21px;
 }
-.services__cart img{
+.services-cart__img img{
+    width: 100%;
+    height: auto;
     margin-top: 33px;
 }
-.services__text{
+.services-cart__text{
     margin: 140px 0 0 70px;
 }
-.services__text h2{
-    line-height: 50px;
-    font-size: 26.35px;
+.services-cart__text h2{
+    line-height: 70px;
+    font-size: 36.35px;
 }
-.services__text p{
+.services-cart__text p{
     line-height: 36px;
     font-size: 15.35px;
     margin-bottom: 56px;
@@ -129,4 +173,99 @@ footer{
     font-size: 13.35pt;
     text-align: center;
 }
-
+@media screen and (max-width:830px) {
+    .banner__prev{
+        margin-left: 45px;
+    }
+    .banner__next{
+        margin-right: 45px;
+    }
+    .services__cart{
+        flex-wrap: wrap;
+    }
+    .services-cart__img{
+        margin: 0 auto;
+    }
+    .services-cart__text{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:640px) {
+    .logo{
+        margin-left: 30px;
+    }
+    .menu{
+        display: none;
+        width: 50%;
+        margin: 0 30px 0 0;
+    }
+    .menu-button{
+        display: block;
+        margin-left: 100px;
+    }
+    input[type="checkbox"]:checked ~ .menu-button+.menu{
+        display: block;
+    }
+    .banner__phone{
+        margin-top: 20px;
+    }
+    .banner__text {
+        padding-left: 0;
+        position: relative;
+        left: -40px;
+         width: 50%;
+    }
+    .banner__text h1{
+        font-size: 28px;
+    }
+    .banner__text p{
+        font-size: 25px;
+    }
+    .banner__prev{
+        display: none;
+     }
+    .banner__next{
+        display: none;
+    }
+    .services__item{
+        width: 90%;
+        flex-direction: row;
+        text-align: left;
+        margin: 30px 0 20px 25px;
+      }
+    .services hr{
+        display: block;
+    }
+    .service-item__text{
+        margin-top: 20px;
+        text-align: left;
+    }
+    .services__item h3{
+        font-size: 35px;
+        margin-left: 30px;
+    }
+    .services__item p{
+        font-size: 20px;
+    }
+    .services{
+        margin-top: 0px;
+        flex-direction: column;
+    }
+    .services__cart{
+        flex-wrap: wrap;
+    }
+    .services-cart__img{
+        margin: 0 auto;
+    }
+    .services-cart__img h1 {
+        margin: 50px 0 20px 0;
+    }
+    .services-cart__text{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:517px) {
+    .services__item{
+    flex-direction: column;
+    }
+    }
