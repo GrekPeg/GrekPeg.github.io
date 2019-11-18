@@ -7,56 +7,36 @@
     box-sizing: border-box;
     text-transform: uppercase;
 }
-/*.section {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #efefef;
-}*/
-html{
+body{
     background: #efefef;
 }
 .card {
- /*   width: 1066px;*/
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    margin-top: 32px;
 }
 .card__left {
-    width: 465px;
-    height: 608px;
-    background: #37b0ae;
-    position: relative;
+    max-width:465px;
+    background: #37b0ae url(../img/camera-shadow.png) no-repeat center 180px /cover;
 }
 .card-left__photo{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-.card-left__photo-main{
-    position: absolute;
-    left: -45px;
-  }
-.card-left__photo-shadow{
-    position: absolute;
-    bottom: -260px;
-     left: -90px;
+    position:relative;
+    left: -40px;
+    padding-bottom: 70px;
 }
 .card__left p{
     font-family:"Arial Black", sans-serif;
     font-size: 25px;
     color: white;
-    padding: 20px 0 40px 20px;
+    padding: 20px 0 35px 25px;
 }
-.card-center{
+.card__center{
     position: absolute;
     z-index: 1000;
-    top: 50%;
-    left: 47.5%;
-    transform: translate(-50%, -50%);
+    left: 43%;
 }
 .card-center__photo-item{
     max-width: 100px;
@@ -67,7 +47,8 @@ html{
 }
 .card-center__photo-item:hover
 {
-    border: 3px solid deeppink;
+    border: 3px solid #37b0ae;
+    transform: scale(1.3);
 }
 .card-center__photo-item img{
     width: 100%;
@@ -76,19 +57,16 @@ html{
     object-position: center;
 }
 .card__right {
-    width: 542px;
-    height: 700px;
+    max-width: 542px;
     background: white;
-    position: relative;
-    padding-left: 90px;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    padding-left: 80px;
+    padding-bottom: 80px;
  }
 .card-right__title{
-    margin: 70px 0 0 0;
+    margin: 70px 0 10px 0;
 }
 .card__right h4{
-    margin: 50px 0 10px 0;
+    margin:50px 0 10px 0;
 }
 .card-right__squares p{
     margin-bottom: 12px;
@@ -109,11 +87,11 @@ html{
     text-decoration: none;
     margin-right:25px;
 }
-.card-right__quantity{
+.card-right__quantity {
     display: flex;
     margin-top: 5px;
     cursor: pointer;
- }
+}
 .card-right__quantity .value{
     width: 50px;
     line-height: 35px;
@@ -127,15 +105,15 @@ html{
     border: 1px solid grey;
 }
 .card-right__quantity .button:hover{
-    background: greenyellow;
-    border: 1px solid black;
+    border: 1px solid red;
+    transform: scale(1.3);
 }
 .card-right__price{
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .card-right__price-old{
     margin-left: 20px;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: none;
     font-weight: normal;
 }
@@ -144,12 +122,11 @@ html{
     width: 200px;
     line-height: 35px;
     border: 1px solid grey;
-    margin-top: 20px;
+    margin-top: 30px;
     text-transform: none;
     font-size: 18px;
     margin-right: 15px;
 }
-
 .card-right__actions .button:hover
 {
     background: #37b0ae;
@@ -157,3 +134,48 @@ html{
     cursor: pointer;
     color: white;
 }
+@media screen and (max-width:1032px) {
+    .card {
+        margin-top: 0px;
+     }
+    .card__left {
+        max-width: 100%;
+        padding-bottom: 100px;
+        padding-right: 68px;
+        background: #37b0ae url(../img/camera-shadow.png) no-repeat -220px 135px /cover;
+    }
+    .card-left__photo{
+        left: 3%;
+    }
+    .card__center{
+        top: 46%;
+        left: 43%;
+        transform: rotate(90deg);
+    }
+    .card-center__photo-item img{
+        transform: rotate(-90deg) ;
+    }
+    .card__right {
+        padding-bottom: 65px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+/*
+@media screen and (max-width:542px) {
+    main{
+        transform: scale(0.5);
+        border: 1px solid red;
+    }
+    .card__center{
+        top: 33%;
+    }
+    .card__left {
+        min-width: 100%;
+    }
+    .card__center{
+        top: 30%;
+        left: 35%;
+    }
+}*/
