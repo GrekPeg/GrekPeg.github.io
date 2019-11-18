@@ -148,8 +148,8 @@ body{
         left: 3%;
     }
     .card__center{
-        top: 46%;
-        left: 43%;
+        top: 65%;
+        /*left: 43%;*/
         transform: rotate(90deg);
     }
     .card-center__photo-item img{
