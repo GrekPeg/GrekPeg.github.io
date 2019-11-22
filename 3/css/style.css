@@ -15,17 +15,23 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
     flex-wrap: wrap;
     margin-top: 32px;
 }
 .card__left {
     max-width:465px;
     background: #37b0ae url(../img/camera-shadow.png) no-repeat center 180px /cover;
+    position: relative;
 }
 .card-left__photo{
     position:relative;
     left: -40px;
     padding-bottom: 70px;
+}
+.card-left__photo img{
+    width: 100%;
+    height: auto;
 }
 .card__left p{
     font-family:"Arial Black", sans-serif;
@@ -33,10 +39,15 @@ body{
     color: white;
     padding: 20px 0 35px 25px;
 }
-.card__center{
+.card-left__center{
     position: absolute;
     z-index: 1000;
-    left: 43%;
+    left: 100%;
+    margin-left: -50px;
+    width: 100px;
+    height: 300px;
+    margin-top: -150px;
+    top:50%;
 }
 .card-center__photo-item{
     max-width: 100px;
@@ -91,6 +102,7 @@ body{
     display: flex;
     margin-top: 5px;
     cursor: pointer;
+    margin-left: 4px;
 }
 .card-right__quantity .value{
     width: 50px;
@@ -116,7 +128,7 @@ body{
     font-size: 16px;
     text-transform: none;
     font-weight: normal;
-}
+ }
 .card-right__actions .button{
     background: white;
     width: 200px;
@@ -134,23 +146,24 @@ body{
     cursor: pointer;
     color: white;
 }
-@media screen and (max-width:1032px) {
+@media screen and (max-width:961px) {
     .card {
         margin-top: 0px;
      }
     .card__left {
         max-width: 100%;
         padding-bottom: 100px;
-        padding-right: 68px;
+        padding-right: 19px;
         background: #37b0ae url(../img/camera-shadow.png) no-repeat -220px 135px /cover;
+        position: relative;
     }
     .card-left__photo{
         left: 3%;
     }
-    .card__center{
-        top: 65%;
-        /*left: 43%;*/
+    .card-left__center{
         transform: rotate(90deg);
+        top: 87%;
+        left: 50%;
     }
     .card-center__photo-item img{
         transform: rotate(-90deg) ;
@@ -160,22 +173,14 @@ body{
         display: flex;
         justify-content: center;
         flex-direction: column;
+        padding-left: 30px;
+        padding-right: 5px;
     }
 }
-/*
-@media screen and (max-width:542px) {
-    main{
-        transform: scale(0.5);
-        border: 1px solid red;
+
+@media screen and (max-width:350px) {
+    .card-center__photo-item:hover
+    {
+        transform: scale(1.1);
     }
-    .card__center{
-        top: 33%;
-    }
-    .card__left {
-        min-width: 100%;
-    }
-    .card__center{
-        top: 30%;
-        left: 35%;
-    }
-}*/
+}
