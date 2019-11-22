@@ -1,3 +1,6 @@
+:root{
+    font-size: 60px;
+}
 * {
     padding: 0;
     margin: 0;
@@ -31,7 +34,7 @@ hr{
 }
 .menu__link{
     text-decoration: none;
-    font-size: 18.35pt;
+    font-size: 0.4rem;
     display: inline-block;
     line-height: 2;
     cursor: pointer;
@@ -45,7 +48,7 @@ hr{
      width: 45px;
      text-align: center;
      line-height: 40px;
-     font-size: 60px ;
+     font-size: 1rem ;
      margin-right: 20px;
  }
  .menu-button p{
@@ -91,17 +94,17 @@ input[type="checkbox"]{
     width: 100%;
 }
 .banner__text {
-    padding-left: 50px;
+    padding-left: 35px;
 }
 .banner__text h1{
     font-family: "Segoe WP Light", sans-serif;
-    font-size: 30.35pt;
+    font-size: 0.7rem;
     color: white;
     line-height: 1.5;
 }
 .banner__text p{
     font-family: "Segoe WP Light", sans-serif;
-    font-size: 20.35pt;
+    font-size: 0.5rem;
     color: white;
     line-height: 1.5;
     padding-bottom: 30px;
@@ -116,14 +119,14 @@ input[type="checkbox"]{
     justify-content: center;
 }
 .services__item{
-    width: 32%;
+    width: 33.33333%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.service-item__img{
+/*.service-item__img{
     max-width: 70%;
-}
+}*/
 .service-item__img img{
     width: 100%;
     height: auto;
@@ -135,12 +138,12 @@ input[type="checkbox"]{
      text-align: center;
 }
 .services__item h3{
-    font-size: 14.35pt;
+    font-size: 0.35rem;
     margin: 0 0 10px 0;
     color: #5094f2
 }
 .services__item p{
-    font-size: 10.35pt;
+    font-size: 0.25rem;
     margin: 0 30px;
 }
 .services__cart{
@@ -149,7 +152,7 @@ input[type="checkbox"]{
 .services-cart__img{
     max-width: 100%;
     margin: 83px auto auto 40px;
-    font-size: 21px;
+    font-size: 0.4rem;
 }
 .services-cart__img img{
     width: 100%;
@@ -161,33 +164,42 @@ input[type="checkbox"]{
 }
 .services-cart__text h2{
     line-height: 70px;
-    font-size: 36.35px;
+    font-size: 0.6rem;
 }
 .services-cart__text p{
     line-height: 36px;
-    font-size: 15.35px;
+    font-size: 0.28rem;
     margin-bottom: 56px;
 }
 footer{
     line-height: 95px;
-    font-size: 13.35pt;
+    font-size: 0.28rem;
     text-align: center;
 }
-@media screen and (max-width:830px) {
+@media screen and (max-width:994px) {
+    :root{
+        font-size: 55px;
+    }
+    .menu__link{
+        margin-right: 20px;
+    }
     .banner__prev{
-        margin-left: 45px;
+        margin-left: 15px;
     }
     .banner__next{
-        margin-right: 45px;
+        margin-right: 15px;
     }
     .services__cart{
         flex-wrap: wrap;
+        margin-top: 40px;
+        margin-right: 20px;
     }
     .services-cart__img{
         margin: 0 auto;
     }
     .services-cart__text{
         margin: 0 auto;
+        margin-top: 40px;
     }
 }
 @media screen and (max-width:640px) {
@@ -198,6 +210,9 @@ footer{
         display: none;
         width: 50%;
         margin: 0 30px 0 0;
+        position: absolute;
+        z-index: 2;
+        background: white;
     }
     .menu-button{
         display: block;
@@ -208,25 +223,28 @@ footer{
     }
     .banner__phone{
         margin-top: 20px;
+        margin-left: 25px;
     }
     .banner__text {
         padding-left: 0;
         position: relative;
-        left: -40px;
-         width: 50%;
+         left: 0%;
+        margin-right: 15px;
+        margin-left: 15px;
+       /*width: 50%;*/
     }
     .banner__text h1{
-        font-size: 28px;
-    }
+        font-size: 0.6rem;
+      }
     .banner__text p{
-        font-size: 25px;
+        font-size: 0.45rem;
     }
     .banner__prev{
         display: none;
      }
     .banner__next{
         display: none;
-    }
+     }
     .services__item{
         width: 90%;
         flex-direction: row;
@@ -237,15 +255,14 @@ footer{
         display: block;
     }
     .service-item__text{
-        margin-top: 20px;
         text-align: left;
     }
     .services__item h3{
-        font-size: 35px;
+        font-size: 0.7rem;
         margin-left: 30px;
     }
     .services__item p{
-        font-size: 20px;
+        font-size: 0.35rem;
     }
     .services{
         margin-top: 0px;
@@ -253,19 +270,42 @@ footer{
     }
     .services__cart{
         flex-wrap: wrap;
+        margin-top: 0;
     }
     .services-cart__img{
         margin: 0 auto;
     }
     .services-cart__img h1 {
         margin: 50px 0 20px 0;
+        font-size: 0.7rem;
     }
     .services-cart__text{
         margin: 0 auto;
     }
 }
 @media screen and (max-width:517px) {
-    .services__item{
-    flex-direction: column;
+    .banner__text h1{
+         font-size: 0.5rem;
+    }
+    .banner__text p{
+        font-size: 0.4rem;
+    }
+    .banner__singup{
+        margin-left: 0;
+    }
+    .services__item {
+        flex-direction: column;
+    }
+
+    .services__cart {
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width:343px) {
+    .services-cart__img h1{
+        font-size: 0.6rem;
+    }
+    .services-cart__text h2 {
+        font-size: 0.5rem;
     }
     }
