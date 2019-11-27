@@ -1,0 +1,116 @@
+header{
+  background: url(../img/rectangle.png) no-repeat center top / cover;
+}
+.hdr{
+   @include flex(space-between,center);
+   &__logo {
+     @include font-source($FontRaleway, 1rem, $white);
+     @include flex(flex-start, center);
+     flex-wrap: nowrap;
+     .logo-img {
+       @include img(50px);
+     }
+     p {
+       text-transform: uppercase;
+       white-space: nowrap;
+     }
+   }
+   &__menu-btn{
+    display: none;
+    background: transparent;
+    width: 45px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 4rem ;
+    p{
+      transform: scale(0.6);
+      color: $white;
+      margin-right: 10px;
+      padding-bottom: 5px;
+    }
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+   &__menu {
+     @include flex(center,center);
+     list-style: none;
+      .menu-link {
+       @include font-source($FontRaleway,1rem,$white);
+       text-decoration: none;
+       display: inline-block;
+       cursor: pointer;
+       position: relative;
+       margin-left: 48px;
+       &:hover{
+         color: $black;
+       }
+     }
+   }
+&__signup {
+  @include font-source($FontRaleway,.8rem,$white);
+  @include btn(transparent,$white,$white,5px 20px);
+}
+}
+
+.elements{
+  @include font-source($FontRaleway,1rem,$white);
+  @include flex(space-between,flex-start);
+  margin-top: 150px;
+  padding-bottom: 188px;
+  &__text {
+    width: 50%;
+    h1 {
+      @include font-source($FontRaleway, 3.2rem, $white, 900, uppercase);
+    }
+    p{
+      line-height: 2;
+      @include font-source($FontRaleway, .99rem);
+    }
+    .btn {
+      @include btn($white,$white,$blue,15px 35px,5px);
+      margin : 40px 20px 0 0;
+      @include font-source($FontRoboto,1rem,$blue,bold,uppercase);
+      &:hover {
+        background: $blue;
+        cursor: pointer;
+        color: $white;
+        border:1px solid $blue;
+      }
+  }
+  }
+  &__video{
+    width:50%;
+    max-width: 600px;
+    min-width: 300px;
+    position: relative;
+       .video{
+      padding-top: 56.25%;
+      height: 0;
+        &__video{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 20px;
+      }
+      &__playbtn{
+          @include img(60px);
+          position: absolute;
+          top: 45%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          border: none;
+          background: none;
+          outline: none;
+      }
+      &__text{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        p{@include font-source($FontRoboto,0.8rem,$blue,bold,uppercase);}
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@media screen and (max-width:1210px) {
+  .easyuse {
+    &__services {
+      @include flex(center, center);
+    }
+  }
+}
+@media screen and (max-width:1074px) {
+  .container {
+    margin: 0 20px;
+  }
+  .hdr {
+    &__menu {
+      display: none;
+      max-width: 30%;
+      position: absolute;
+      z-index: 2;
+      background: transparent;
+    }
+
+    &__menu-btn {
+      display: block;
+    }
+
+    input[type="checkbox"]:checked ~ &__menu-btn + &__menu {
+      display: block;
+    }
+  }
+  .elements {
+    @include flex(center, center);
+    padding-bottom: 88px;
+    &__text {
+      width: 100%;
+      text-align: center;
+      h1 {
+        @include font-source($FontRaleway, 2rem, $white, 900, uppercase);
+      }
+
+      p {
+        line-height: 1.5;
+        @include font-source($FontRaleway, .9rem);
+      }
+    }
+
+    &__video {
+      width: 100%;
+    margin-top: 60px;
+      .video {
+        &__video {
+          left: 0;
+        }
+      }
+    }
+  }
+
+}
