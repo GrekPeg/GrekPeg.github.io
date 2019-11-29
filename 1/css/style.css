@@ -13,7 +13,7 @@ hr{
      color: lightgrey;
  }
 .container{
-    max-width: 980px;
+    width: 82%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -21,6 +21,7 @@ hr{
 }
 .logo{
     max-width: 175px;
+    margin-left: 10px;
 }
 .logo img{
     margin-top: 10px;
@@ -40,22 +41,22 @@ hr{
     cursor: pointer;
     position:relative;
     border-bottom: 3px solid #fff;
-    margin-left: 25px;
+    margin-right: 25px;
 }
  .menu-button{
      display: none;
      background: #5094f2;
-     width: 45px;
-     text-align: center;
-     line-height: 40px;
-     font-size: 1rem ;
-     margin-right: 20px;
+     width: 50px;
+     height: 50px;
+     margin: 10px 20px 10px 0;
+     font-size: .8rem;
  }
  .menu-button p{
-    transform: scale(0.6);
+    transform: scale(1);
+     text-align: center;
+     position: relative;
+     top: -20%;
      color: white;
-     margin-right: 10px;
-     padding-bottom: 5px;
  }
 input[type="checkbox"]{
      display: none;
@@ -78,23 +79,25 @@ input[type="checkbox"]{
 .banner{
     background: #5b6c7f url(../img/1.jpg) no-repeat center top / cover;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 .banner__prev{
-    margin-left: 92px;
+    margin-left: 7.36%;
 }
 .banner__next{
-    margin-right: 92px;
+    margin-right: 7.36%;
 }
 .banner__phone{
-    margin-top: 30px;
-    max-width: 36%;/*358px;*/
+    margin: 36px 8.8% 0 5.04%;
+    min-width: 28%;
 }
 .banner__phone img {
     width: 100%;
+    height: auto;
 }
 .banner__text {
-    padding-left: 35px;
+    min-width: 40.3%;
 }
 .banner__text h1{
     font-family: "Segoe WP Light", sans-serif;
@@ -107,10 +110,14 @@ input[type="checkbox"]{
     font-size: 0.5rem;
     color: white;
     line-height: 1.5;
-    padding-bottom: 30px;
 }
 .banner__singup {
+    width: 174px;
     margin-left: 10px;
+}
+.banner__singup img{
+    width: 100%;
+    height: auto;
 }
 .services{
     margin-top: 55px;
@@ -124,9 +131,9 @@ input[type="checkbox"]{
     flex-direction: column;
     align-items: center;
 }
-/*.service-item__img{
-    max-width: 70%;
-}*/
+.service-item__img{
+    max-width: 187px;
+}
 .service-item__img img{
     width: 100%;
     height: auto;
@@ -137,30 +144,32 @@ input[type="checkbox"]{
 .service-item__text{
      text-align: center;
 }
-.services__item h3{
-    font-size: 0.35rem;
+.service-item__text h3{
+    font-size: 0.4rem;
     margin: 0 0 10px 0;
     color: #5094f2
 }
-.services__item p{
-    font-size: 0.25rem;
+.service-item__text p{
+    font-size: 0.3rem;
     margin: 0 30px;
 }
-.services__cart{
+.services-cart{
     display: flex;
 }
 .services-cart__img{
-    max-width: 100%;
-    margin: 83px auto auto 40px;
-    font-size: 0.4rem;
+     min-width: 35%;
+ }
+.services__cart h1{
+    margin-top: 83px;
+    margin-bottom: 30px;
+    font-size: .8rem;
 }
 .services-cart__img img{
     width: 100%;
     height: auto;
-    margin-top: 33px;
 }
 .services-cart__text{
-    margin: 140px 0 0 70px;
+   margin: 0 10px 0 70px;
 }
 .services-cart__text h2{
     line-height: 70px;
@@ -168,47 +177,43 @@ input[type="checkbox"]{
 }
 .services-cart__text p{
     line-height: 36px;
-    font-size: 0.28rem;
+    font-size: 0.32rem;
     margin-bottom: 56px;
 }
 footer{
     line-height: 95px;
-    font-size: 0.28rem;
+    font-size: 0.32rem;
     text-align: center;
 }
-@media screen and (max-width:994px) {
-    :root{
-        font-size: 55px;
+@media screen and (max-width:1024px) {
+    :root {
+        font-size: 50px;
     }
-    .menu__link{
+    .container{
+        width: 100%;
+    }
+    .banner__phone{
+        margin-right: 1%;
+    }
+    .services{
+        margin-left: 10px;
         margin-right: 20px;
-    }
-    .banner__prev{
-        margin-left: 15px;
-    }
-    .banner__next{
-        margin-right: 15px;
-    }
-    .services__cart{
-        flex-wrap: wrap;
-        margin-top: 40px;
-        margin-right: 20px;
-    }
-    .services-cart__img{
-        margin: 0 auto;
     }
     .services-cart__text{
-        margin: 0 auto;
-        margin-top: 40px;
+        margin: 0 10px;
+    }
+    .services__cart h1{
+       margin-left: 20px;
     }
 }
+
 @media screen and (max-width:640px) {
     .logo{
         margin-left: 30px;
     }
     .menu{
         display: none;
-        width: 50%;
+        width: 20%;
         margin: 0 30px 0 0;
         position: absolute;
         z-index: 2;
@@ -217,24 +222,20 @@ footer{
     .menu-button{
         display: block;
         margin-left: 100px;
+        font-size: 1rem;
     }
     input[type="checkbox"]:checked ~ .menu-button+.menu{
         display: block;
     }
-    .banner__phone{
-        margin-top: 20px;
-        margin-left: 25px;
-    }
     .banner__text {
-        padding-left: 0;
-        position: relative;
-         left: 0%;
-        margin-right: 15px;
-        margin-left: 15px;
-       /*width: 50%;*/
+        min-width:60%;
+    }
+    .banner__phone img {
+        width: 80%;
+        height: auto;
     }
     .banner__text h1{
-        font-size: 0.6rem;
+        font-size: 0.55rem;
       }
     .banner__text p{
         font-size: 0.45rem;
@@ -246,66 +247,71 @@ footer{
         display: none;
      }
     .services__item{
-        width: 90%;
+        width: 100%;
         flex-direction: row;
         text-align: left;
-        margin: 30px 0 20px 25px;
+        margin: 20px 5px 10px 5px;
       }
     .services hr{
         display: block;
     }
     .service-item__text{
         text-align: left;
-    }
-    .services__item h3{
-        font-size: 0.7rem;
+      }
+    .service-item__text h3{
+        font-size: 0.5rem;
         margin-left: 30px;
     }
-    .services__item p{
+    .service-item__text p{
         font-size: 0.35rem;
     }
     .services{
         margin-top: 0px;
         flex-direction: column;
     }
-    .services__cart{
+    .services-cart{
         flex-wrap: wrap;
         margin-top: 0;
     }
     .services-cart__img{
         margin: 0 auto;
     }
-    .services-cart__img h1 {
-        margin: 50px 0 20px 0;
-        font-size: 0.7rem;
+    .services__cart h1 {
+        margin: 50px 0 40px 0;
+        font-size: 0.8rem;
+        text-align: center;
     }
     .services-cart__text{
-        margin: 0 auto;
+        margin-left: 30px;
+        margin-right: 20px;
     }
 }
-@media screen and (max-width:517px) {
+@media screen and (max-width:465px) {
+    :root {
+        font-size: 40px;
+    }
+    .menu-button{
+        height: 42px;
+    font-size: 1rem;
+    }
+    .banner__singup img{
+        width: 70%;
+        height: auto;
+    }
     .banner__text h1{
-         font-size: 0.5rem;
+        font-size: 0.5rem;
     }
     .banner__text p{
         font-size: 0.4rem;
     }
-    .banner__singup{
-        margin-left: 0;
+    .service-item__text p{
+       margin-left:10px;
     }
-    .services__item {
-        flex-direction: column;
+    .service-item__text h3{
+        margin-left:5px;
     }
-
-    .services__cart {
+    .services-cart__text{
         margin-left: 10px;
     }
+
 }
-@media screen and (max-width:343px) {
-    .services-cart__img h1{
-        font-size: 0.6rem;
-    }
-    .services-cart__text h2 {
-        font-size: 0.5rem;
-    }
-    }
