@@ -1,47 +1,13 @@
-@media screen and (max-width:1210px) {
-  .easyuse {
-    &__services {
-      @include flex(center, center);
-    }
-  }
-}
 @media screen and (max-width:1074px) {
-  .container {
-    margin: 0 20px;
-  }
-  .hdr {
-    &__menu {
-      display: none;
-      max-width: 30%;
-      position: absolute;
-      z-index: 2;
-      background: transparent;
-    }
-
-    &__menu-btn {
-      display: block;
-    }
-
-    input[type="checkbox"]:checked ~ &__menu-btn + &__menu {
-      display: block;
-    }
-  }
+.container{
+  margin: 0 10%;
+}
   .elements {
     @include flex(center, center);
-    padding-bottom: 88px;
+    padding-bottom: 53px;
     &__text {
-      width: 100%;
-      text-align: center;
-      h1 {
-        @include font-source($FontRaleway, 2rem, $white, 900, uppercase);
-      }
-
-      p {
-        line-height: 1.5;
-        @include font-source($FontRaleway, .9rem);
-      }
+      @include h1-p(100%,28px,45px,1.7rem,.8rem,$white,$white,750,left,uppercase);
     }
-
     &__video {
       width: 100%;
     margin-top: 60px;
@@ -52,5 +18,135 @@
       }
     }
   }
-
+  .easyuse {
+    &__text {
+      margin-top: 20px;
+      @include h1-p(100%,15px,0,2rem,0.75rem,$black,$grey,600,center,none);
+    }
+    &__services {
+      .services-item {
+        margin-top: 70px;
+      }
+    }
+  }
+  .services {
+    &__text {
+      @include h1-p(70%, 28px, 47px, 2rem, 0.7rem, $black, $grey, 600, center, none);
+    }
+  }
+  .testimonials {
+    flex-wrap: wrap;
+    &__text {
+      margin-top: 40px;
+      @include flex(center, center);
+      @include h1-p(100%,18px,38px,2rem,.75rem,$white,$white,500,center,none);
+      .btn {
+        margin-bottom : 50px;
+          }
+    }
+    &__box {
+      width: 100%;
+    }
+  }
+  .team {
+    &__text {
+     @include h1-p(80%,25px,60px,2rem,0.75rem,$black,$grey,600,center,none);
+    }
+    &__avatar{
+         .team-details {
+          @include h1-p(80%, 15px, 75px, 1rem, .75rem, $black, $grey, 610, center, none);
+        }
+    }
+   }
+  .contactus {
+    &__text {
+      @include h1-p(80%, 25px, 50px, 1.8rem, 0.75rem, $black, $grey, 600, center, none);
+    }
+    &__form {
+      width: 100%;
+    }
+  }
 }
+@media screen and (max-width:800px) {
+  .hf {
+    nav{
+      position: relative;
+    }
+    &__menu {
+      display: none;
+      position: absolute;
+      left: -80px;
+      top: 45px;
+      background: transparent;
+    }
+    &__menu-btn {
+      display: block;
+    }
+    input[type="checkbox"]:checked ~ &__menu-btn + &__menu {
+      display: block;
+    }
+  }
+  .counts {
+    &__item {
+      min-width: 50%;
+    }
+  }
+  .services {
+    &__box{
+      width:70%;
+      .box-item{
+        .box-item__content {
+          .content__img{
+            @include img(100%);
+          }
+          p{
+            max-width: 100%;
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+  .team {
+     &__avatar {
+       flex-direction: row;
+       flex-wrap: nowrap;
+       .team-avatar {
+         @include flex(center, center);
+         flex-direction:column;
+         .avatar__img-c {
+           @include avatar(100px);
+           margin: 35px 0;
+         }
+         .avatar__img-c::after {
+           @include avatar-after(100px);
+         }
+       }
+       .team-details{
+         margin-left: 30px;
+       }
+    }
+  }
+  .contactus {
+    &__form {
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"] {
+        width: 100%;
+      }
+    }
+  }
+  footer{
+    .foo{
+      @include flex(flex-start,flex-start);
+      flex-direction: column;
+      &__menu {
+        flex-direction: column;
+      }
+    }
+    .team__social{
+        margin-top: 20px;
+      }
+    }
+  }
+

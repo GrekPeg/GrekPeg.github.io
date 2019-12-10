@@ -1,43 +1,46 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Final</title>
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
 </head>
 <body>
 <header>
     <div class="container">
-        <div class="hdr">
-            <div class="hdr__logo">
+        <div class="hf">
+            <div class="hf__logo">
                 <div class="logo-img">
-                    <img src="img/logo.png" alt="Logo">
+                    <img class="animated infinite wow bounce" data-wow-delay=".2s" src="img/logo.png" alt="Logo">
                 </div>
-                <p>Dart<br><strong>service manager</strong></p>
+                <p class="animated infinite wow bounce" data-wow-delay=".4s">Dart<br><strong>service manager</strong></p>
             </div>
-            <nav>
+              <nav class="wow fadeInDown">
                 <input type="checkbox" id="hid-button">
-                <label class="hdr__menu-btn" for="hid-button"><p>&#9776;</p></label>
-                <ul class="hdr__menu">
+                <label class="hf__menu-btn" for="hid-button"><p>&#9776;</p></label>
+                <ul class="hf__menu hf__menu-active">
                     <li><a href=# class="menu-link">Home</a></li>
                     <li><a href=# class="menu-link">Service</a></li>
+
                     <li><a href=# class="menu-link">Extension</a></li>
                     <li><a href=# class="menu-link">Pricing</a></li>
                     <li><a href=# class="menu-link">Help</a></li>
                 </ul>
             </nav>
-            <input type="button" value="sign up" class="hdr__signup">
+            <input type="button" value="sign up" class="hf__signup animated wow heartBeat" data-wow-delay=".2s">
         </div>
         <div class="elements">
-            <div class="elements__text">
-                <h1>lorem Ipsum Dolor sit amet</h1>
+            <div class="elements__text wow fadeInLeft" data-wow-delay=".2s" data-wow-offset="100">
+                <h1>Lorem Ipsum Dolor sit amet</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc</p>
                 <input type="button" value="Buy now" class="btn">
                 <input type="button" value="Try for free" class="btn">
-             </div>
-            <div class="elements__video">
+            </div>
+            <div class="elements__video wow fadeInRight" data-wow-delay=".2s" data-wow-offset="100">
                 <div class="video">
                     <video src="#" poster="img/video1.png" class="video__video"></video>
                     <button type="button" name="button2" class="video__playbtn">
@@ -59,42 +62,42 @@
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
             </div>
             <div class="easyuse__services">
-                <div class="services-item">
+                <div class="services-item wow fadeInLeft" data-wow-offset="100">
                     <div class="service-item__img">
                         <img src="img/icon1.png" alt="Услуга1">
                     </div>
                     <div class="service-item__text">
-                        <h3>
+                        <h1>
                             Title Goes Here
-                        </h3>
+                        </h1>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua.
                         </p>
                     </div>
                 </div>
-                <div class="services-item">
+                <div class="services-item wow fadeInUp" data-wow-offset="100">
                     <div class="service-item__img">
                         <img src="img/icon2.png" alt="Услуга2">
                     </div>
                     <div class="service-item__text">
-                        <h3>
+                        <h1>
                             Title Goes Here
-                        </h3>
+                        </h1>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua.
                         </p>
                     </div>
                 </div>
-                <div class="services-item">
+                <div class="services-item wow fadeInRight" data-wow-offset="100">
                     <div class="service-item__img">
                         <img src="img/icon3.png" alt="Услуга3">
                     </div>
                     <div class="service-item__text">
-                        <h3>
+                        <h1>
                             Title Goes Here
-                        </h3>
+                        </h1>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua.
@@ -105,9 +108,304 @@
             <input type="button" value="Get started" class="easyuse__btn">
         </div>
     </div>
-</main>
-    <footer>
+    <div class="counts">
+        <div class="counts__item wow fadeInLeft" data-wow-delay=".6s" data-wow-offset="100">
+             <a href=#><img src="img/business1.png" alt="Business"></a>
+        </div>
+        <div class="counts__item wow fadeInLeft" data-wow-delay=".2s" data-wow-offset="100">
+             <a href=#><img src="img/file_download1.png" alt="Downloads"></a>
+        </div>
+        <div class="counts__item wow fadeInRight" data-wow-delay=".2s" data-wow-offset="100">
+            <a href=#><img src="img/person1.png" alt="Free Installs"></a>
+        </div>
+        <div class="counts__item wow fadeInRight" data-wow-delay=".6s" data-wow-offset="100">
+            <a href=#> <img src="img/filedownload1.png" alt="Pro Users"></a>
+        </div>
+    </div>
+    <div class="services">
+        <div class="services__text">
+            <h1>
+                Services
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna
+            </p>
+        </div>
+        <div class="services__box">
+            <div class="box-item box-item-active wow fadeInLeft" data-wow-delay=".s" data-wow-offset="40">
+                <p><img src="img/trending_up.png" alt="">&emsp;Statistics</p>
+                <input type="checkbox" id="box1">
+                <label class="box-item__btn" for="box1"><img src="img/arrow_drop_down.png" alt=""></label>
+                <div class="box-item__content">
+                    <div class="content__img">
+                        <img src="img/rounded-rectangle-53.png" alt="img">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam,
 
-     </footer>
+                        <br>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                        aute
+                        irure dolor in reprehenderit in
+                    </p>
+                </div>
+            </div>
+            <div class="box-item wow fadeInLeft" data-wow-delay=".2s" data-wow-offset="40">
+                <p><img src="img/mail.png" alt="">&emsp;inbox</p>
+                <input type="checkbox" id="box2">
+                <label class="box-item__btn" for="box2"><img src="img/arrow_drop_down.png" alt=""></label>
+                <div class="box-item__content">
+                    <div class="content__img">
+                        <img src="img/rounded-rectangle-53.png" alt="img">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam,
+
+                        <br>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                        aute
+                        irure dolor in reprehenderit in
+                    </p>
+                </div>
+            </div>
+            <div class="box-item wow fadeInLeft" data-wow-delay=".4s" data-wow-offset="40">
+                <p><img src="img/team.png" alt="">&emsp;team</p>
+                <input type="checkbox" id="box3">
+                <label class="box-item__btn" for="box3"><img src="img/arrow_drop_down.png" alt=""></label>
+                <div class="box-item__content">
+                    <div class="content__img">
+                        <img src="img/rounded-rectangle-53.png" alt="img">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam,
+
+                        <br>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                        aute
+                        irure dolor in reprehenderit in
+                    </p>
+                </div>
+            </div>
+            <div class="box-item wow fadeInLeft" data-wow-delay=".6s" data-wow-offset="40">
+                <p><img src="img/settings.png" alt="">&emsp;settings</p>
+                <input type="checkbox" id="box4">
+                <label class="box-item__btn" for="box4"><img src="img/arrow_drop_down.png" alt=""></label>
+                <div class="box-item__content">
+                    <div class="content__img">
+                        <img src="img/rounded-rectangle-53.png" alt="img">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam,
+
+                        <br>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                        aute
+                        irure dolor in reprehenderit in
+                    </p>
+                </div>
+            </div>
+            <div class="box-item wow fadeInLeft" data-wow-delay=".8s" data-wow-offset="40">
+                <p><img src="img/rss_feed.png" alt="">&emsp;feed</p>
+                <input type="checkbox" id="box5">
+                <label class="box-item__btn" for="box5"><img src="img/arrow_drop_down.png" alt=""></label>
+                <div class="box-item__content">
+                    <div class="content__img">
+                        <img src="img/rounded-rectangle-53.png" alt="img">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam,
+
+                        <br>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                        aute
+                        irure dolor in reprehenderit in
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="testimonials-block">
+        <div class="container">
+            <div class="testimonials">
+                <div class="testimonials__text">
+                    <h1>
+                        What our customers have to say about us.
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna
+                    </p>
+                    <input type="button" value="Get started" class="btn">
+                </div>
+                <div class="testimonials__box">
+                    <a href=# class="testimonials-box__prev"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+                    <div class="avatar">
+                        <div class="avatar__img">
+                            <img src="img/man.png" alt="">
+                        </div>
+                        <div class="avatar__text">
+                            <h1>
+                                John Doe
+                            </h1>
+                            <i>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt
+                                ut
+                                labore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris
+                                nisi
+                                ut
+                                aliquip ex ea
+                            </i>
+                        </div>
+                    </div>
+                    <p></p>
+                    <div class="avatar">
+                        <div class="avatar__img">
+                            <img src="img/woman.png" alt="">
+                        </div>
+                        <div class="avatar__text">
+                            <h1>
+                                Khalessi
+                            </h1>
+                            <i>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt
+                                ut
+                                labore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris
+                                nisi
+                                ut
+                                aliquip ex ea
+                            </i>
+                        </div>
+                    </div>
+                    <a href=# class="testimonials-box__next"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="team">
+            <div class="team__text">
+                <h1>
+                    Our Team
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna
+                </p>
+            </div>
+            <div class="team__avatar">
+                <div class="team-avatar wow flip" data-wow-delay=".2s" data-wow-offset="100">
+                    <div class="avatar__img">
+                        <img src="img/team-l.png" alt="">
+                    </div>
+                    <div class="avatar__img-c">
+                        <img src="img/team-c.png" alt="">
+                    </div>
+                    <div class="avatar__img">
+                        <img src="img/team-r.png" alt="">
+                    </div>
+                </div>
+                <div class="team-details">
+                    <h1>
+                        Sophie Turner
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magnaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt
+                    </p>
+                </div>
+            </div>
+            <div class="team__social">
+                <a href=#><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                <a href=#><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                <a href=#><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                <a href=#><i class="fab fa-dribbble" aria-hidden="true"></i></a>
+                <a href=#><i class="fab fa-behance" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="contactus-block">
+        <div class="container">
+            <div class="contactus">
+                <div class="contactus__text wow slideInRight">
+                    <h1>
+                        Contact Us
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna
+                    </p>
+                </div>
+                <form class="contactus__form wow slideInLeft" data-wow-offset="100" action="#" method="post">
+                    <input type="text" name="firstName" placeholder="First Name"/>
+                    <input type="text" name="lastName" placeholder="Last Name"/>
+                    <input type="email" name="email" placeholder="Email"/>
+                    <input type="tel" name="phone" placeholder="Phone"/>
+                    <textarea name="Message" placeholder="Message"></textarea>
+                    <label class="subscribe-transform">
+                        <input type="checkbox" class="subscribe__input" name="subscribe"/>
+                        <span class="subscribe__label">subscribe to the newsletter</span>
+                    </label>
+                    <input type="submit" name="send" value="send"/>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <div class="hf">
+            <div class="hf__logo">
+                <div class="logo-img">
+                    <img src="img/logo.png" alt="Logo">
+                </div>
+                <p>Dart<br><strong>service manager</strong></p>
+            </div>
+            <nav>
+                <input type="checkbox" id="hid-button1">
+                <label class="hf__menu-btn" for="hid-button1"><p>&#9776;</p></label>
+                <ul class="hf__menu hf__menu-active">
+                    <li><a href=# class="menu-link">Home</a></li>
+                    <li><a href=# class="menu-link">Service</a></li>
+                    <li><a href=# class="menu-link">Extension</a></li>
+                    <li><a href=# class="menu-link">Pricing</a></li>
+                    <li><a href=# class="menu-link">Help</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="foo">
+            <nav>
+                <ul class="foo__menu">
+                    <li><a href=# class="menu-foo">Privecy Policy</a></li>
+                    <li><a href=# class="menu-foo">About Us</a></li>
+                    <li><a href=# class="menu-foo">About Us copy</a></li>
+                </ul>
+            </nav>
+            <div class="team__social">
+                <a href=#><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                <a href=#><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                <a href=#><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                <a href=#><i class="fab fa-dribbble" aria-hidden="true"></i></a>
+                <a href=#><i class="fab fa-behance" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/wow.min.js"></script>
+<script>
+        new WOW().init();
+</script>
 </body>
 </html>

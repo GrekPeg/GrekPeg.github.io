@@ -1,0 +1,6 @@
+.counts {
+  @include flex(center, center);
+  &__item {
+    @include img(25%);
+  }
+}

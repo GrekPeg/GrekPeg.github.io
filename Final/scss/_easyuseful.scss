@@ -3,41 +3,31 @@
   flex-direction: column;
   @include font-source($FontRaleway, 1rem, $black, normal);
   &__text{
-   max-width: 600px;
-   text-align: center;
     margin-top: 40px;
-    line-height: 1.8;
-    h1{
-      @include font-source($FontRaleway, 2.5rem);
-    }
+    @include h1-p(44%,15px,90px,2.3rem,0.75rem,$black,$grey,600,center,none);
     h3{
-      @include font-source($FontRaleway, 1.3rem, $grey);
-    }
-    p{
-      @include font-source($FontRaleway, .8rem, $grey);
+      @include font-source($FontRaleway, 1.3rem, $grey,500);
+      text-align: center;
+      margin-bottom: 20px;
     }
   }
   &__services{
-    @include flex(space-between,center);
+    @include flex(center,flex-end);
     width: 100%;
-    .services-item{
-     margin-top: 96px;
-     max-width: 350px;
-     text-align: center;
-      .service-item__text h3{
-        margin-top: 45px;
-        margin-bottom: 18px;
+    .services-item {
+      max-width: 350px;
+      text-align: center;
+      margin-left: 6%;
+      .service-item__text {
+        margin-top: 30px;
+        @include h1-p(100%,17px,0,1rem,0.75rem,$black,$grey,600,center,none);
+        }
       }
-      & p{
-        @include font-source($FontRaleway, .75rem, $grey);
-        line-height: 1.5;
-       }
-     }
-  }
+    }
   &__btn {
     @include btn($green, $green, $white, 15px 35px, 5px);
     @include font-source($FontRoboto,1rem,$white,bold,uppercase);
-    margin-top: 78px;
-    margin-bottom: 98px;
+    margin-top: 83px;
+    margin-bottom: 63px;
   }
 }

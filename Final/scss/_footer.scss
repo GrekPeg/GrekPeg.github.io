@@ -1,0 +1,21 @@
+footer {
+  padding-top: 45px;
+  padding-bottom: 50px;
+ background: $blue;
+}
+.foo{
+   @include flex(space-between,center);
+  margin-top: 45px;
+  &__menu {
+      @include flex(flex-start,center);
+    list-style-position: inside;
+    color: $white;
+    .menu-foo {
+      @include font-source($FontRaleway,.7rem,$grey);
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+      width: 110px;
+      }
+  }
+}

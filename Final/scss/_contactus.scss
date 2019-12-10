@@ -1,0 +1,45 @@
+.contactus-block{
+  background: $lgrey;
+}
+.contactus {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  @include flex(center, center);
+  flex-direction: column;
+
+  &__text {
+    @include h1-p(45%, 25px, 50px, 2.3rem, 0.75rem, $black, $grey, 600, center, none);
+  }
+  &__form {
+    @include flex(space-between, center);
+    width: 50%;
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea
+    {
+      width: 46%;
+      border: 1px solid $black;
+      border-radius: 5px;
+      background: $lgrey;
+      padding: 18px 20px;
+       margin-bottom: 20px;
+      @include font-source($FontRaleway, .75rem, $black, 500);
+    }
+    textarea {
+      width: 100%;
+      height: 149px;
+    }
+    input[type="submit"] {
+      @include btn($green, $green, $white, 15px 43px, 5px);
+      @include font-source($FontRoboto, .75rem, $white, 500, uppercase);
+    }
+    input[type="checkbox"] {
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    label{
+      @include font-source($FontRaleway, .75rem, $grey, 500);
+    }
+  }
+}

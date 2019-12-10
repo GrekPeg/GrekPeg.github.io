@@ -1,0 +1,58 @@
+.testimonials-block{
+  background: url(../img/rectangle1.png) no-repeat center top / cover;
+}
+.testimonials {
+  @include flex(center, center);
+  flex-wrap: nowrap;
+  margin-top: -15px;
+  &__text {
+    @include h1-p(47%,18px,78px,2.2rem,.75rem,$white,$white,500,left,none);
+    padding-right:7%;
+    .btn {
+      @include btn($blue, $blue, $white, 15px 35px, 5px);
+      @include font-source($FontRoboto,1rem,$white,bold,uppercase);
+    }
+  }
+  &__box{
+    width: 53%;
+    p{
+      border: .05px solid transparent;
+    }
+    .testimonials-box__prev{
+      position: relative;
+      left: 50%;
+      @include font-source($FontRaleway,1.8rem, $white);
+      text-decoration: none;
+    }
+    .testimonials-box__next{
+      position: relative;
+      left: 50%;
+      @include font-source($FontRaleway,1.8rem, $white);
+      text-decoration: none;
+    }
+    .avatar{
+      position: relative;
+      @include flex(center, center);
+      flex-wrap: nowrap;
+      margin: 35px 0;
+      .avatar__img{
+        left: 0;
+        position: absolute;
+        @include avatar(60px);
+      }
+      .avatar__text{
+        background: $white;
+        border-radius: 5px;
+        margin-left:15%;
+        padding: 30px 35px;
+        h1{
+          @include font-source($FontRaleway, 1.5rem, $black);
+        }
+        i{
+          line-height: 1.8;
+          @include font-source($FontRaleway, .65rem, $grey)
+        }
+      }
+    }
+  }
+}

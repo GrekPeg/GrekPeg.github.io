@@ -32,4 +32,40 @@
            cursor: pointer;}
   }
 }
+@mixin avatar ($width) {
+  overflow: hidden;
+  width: $width;
+  height: $width;
+  border-radius: 50%;
+  img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+}
 
+@mixin avatar-after($width){
+  height: $width;
+  width: $width;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@mixin h1-p ($maxwidth,$marbh,$marbp,$sizefh,$sizefp,$colorh,$colorp,$weight,$textalign,$uppercase) {
+    max-width: $maxwidth;
+  h1 {
+    text-align: $textalign;
+    margin-bottom: $marbh;
+    @include font-source($FontRaleway, $sizefh, $colorh, $weight,$uppercase);
+  }
+  p {
+    line-height: 1.5;
+    text-align: $textalign;
+    margin-bottom: $marbp;
+    @include font-source($FontRaleway, $sizefp, $colorp);
+  }
+}

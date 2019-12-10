@@ -1,0 +1,49 @@
+.team {
+  margin-top: 40px;
+  margin-bottom: 58px;
+@include flex(center, center);
+  &__text {
+    @include h1-p(45%,25px,90px,2.3rem,0.75rem,$black,$grey,600,center,none);
+  }
+  &__avatar {
+    width: 100%;
+    margin-bottom: 55px;
+    @include flex(center, center);
+    flex-direction: column;
+    .team-avatar {
+      @include flex(center, center);
+      .avatar__img {
+        position: relative;
+        @include avatar(100px);
+      }
+      .avatar__img::after {
+        @include avatar-after(100px);
+        background: rgba(255, 255, 255, 0.6);
+      }
+      .avatar__img-c {
+        margin: 0 52px;
+        position: relative;
+        @include avatar(160px);
+        box-shadow: 0 0 0 20px rgb(255, 255, 255),
+        0 0 5px 25px rgba(37, 37, 37, .1);
+      }
+      .avatar__img-c::after {
+        @include avatar-after(160px);
+        box-shadow: inset 0 0 10px 10px, inset 0 0 10px;
+      }
+    }
+    .team-details{
+         margin-top:60px;
+         @include flex(center, center);
+         flex-direction: column;
+         @include h1-p(51%,15px,0,1rem,.75rem,$black,$grey,610,center,none);
+   }
+  }
+  &__social{
+      text-align: center;
+    a{
+      @include font-source($FontAwesome,.8rem,$grey);
+    }
+    i{margin-left: 20px;}
+}
+}
